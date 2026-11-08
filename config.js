@@ -10,5 +10,7 @@ window.LSPACE_CONFIG = {
   // YouTube : vidéos longues et shorts se mettent à jour automatiquement depuis l'ID de la chaîne.
   youtubeChannelId: "UCuK8wKbVwZIHnEGRAAhhZVg",
   // Optionnel mais recommandé : clé gratuite YouTube Data API v3 (restreinte à ton domaine) pour des vidéos toujours à jour.
+  // Nombre de personnes dans l'espace affiché UNIQUEMENT si toutes les API échouent (0 = masquer le bloc). À mettre à jour à la main.
+  peopleInSpaceFallback: 0,
   youtubeApiKey: "AIzaSyBfxuymlB8ZTeyzfZk8sBm6RUxH1jBF4OA"
 };
