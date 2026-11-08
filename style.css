@@ -176,3 +176,10 @@ nav a{transition:border-color .25s}
 .feed.row1.vert{grid-auto-columns:calc((100% - 100px)/6);gap:20px}
 @media(max-width:1000px){.feed.row1.vert{grid-auto-columns:calc((100% - 40px)/3)}}
 @media(max-width:760px){.feed.row1.vert{grid-auto-columns:42%;gap:12px}}
+/* v8 : vidéo à la une, pas de scroll vertical */
+.feed.row1{overflow-y:hidden}
+.ft{margin:0 0 36px;max-width:960px}.ftv{position:relative;aspect-ratio:16/9;background:#000;border:1px solid var(--line);overflow:hidden}
+.ftv img,.ftv iframe{position:absolute;inset:0;width:100%;height:100%;border:0;object-fit:cover}
+.ft .cap{margin-top:10px;display:flex;gap:10px;align-items:center;text-decoration:none}.ft .cap:hover{color:#fff}
+@media(max-width:760px){.ft{margin-bottom:22px}}
+.pl{position:absolute;inset:0;display:block}.pl::after{content:"▶";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:72px;height:72px;border-radius:50%;background:var(--yellow);color:var(--bg);display:grid;place-items:center;font-size:1.4rem;padding-left:5px;transition:transform .25s}.pl:hover::after{transform:translate(-50%,-50%) scale(1.1)}
